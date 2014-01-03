@@ -5,7 +5,7 @@ load("lib/Timer.js");
 load("lib/jasmine-1.3.0/jasmine.js");
 /*global jasmine*/
 
-Array.prototype.slice(arguments).forEach(function (spec) {
+Array.prototype.slice.apply(arguments).forEach(function (spec) {
     load(spec);
 });
 
